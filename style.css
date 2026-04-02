@@ -1,0 +1,48 @@
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Roboto', sans-serif; background:#f7f7f7; color:#333; }
+
+/* Header */
+header {
+    display:flex; justify-content:space-between; align-items:center;
+    padding:20px 50px; background:#ff5e62; color:white; position:sticky; top:0;
+}
+header .logo { font-size:24px; font-weight:bold; }
+header nav a { color:white; text-decoration:none; margin-left:20px; transition:0.3s; }
+header nav a:hover { text-decoration:underline; }
+
+/* Hero */
+.hero { text-align:center; padding:80px 20px; background: linear-gradient(135deg,#667eea,#764ba2); color:white; animation: heroFade 3s ease-in-out infinite alternate; }
+@keyframes heroFade {0%{opacity:0.8;}100%{opacity:1;}}
+.hero h1 { font-size:48px; margin-bottom:10px; }
+.hero p { font-size:20px; }
+
+/* Products */
+.products { padding:50px 20px; text-align:center; }
+.products h2 { font-size:32px; margin-bottom:30px; }
+.product-list { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
+.product-card {
+    background:white; border-radius:15px; padding:20px; width:200px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1); transition:transform 0.3s, box-shadow 0.3s;
+}
+.product-card:hover { transform:translateY(-10px); box-shadow:0 15px 25px rgba(0,0,0,0.2);}
+.product-card img { width:100%; border-radius:10px; margin-bottom:10px; }
+.product-card h3 { font-size:18px; margin-bottom:5px; }
+.product-card p { font-size:16px; margin-bottom:10px; }
+.product-card button { padding:10px 15px; border:none; border-radius:10px; background:#ff5e62; color:white; cursor:pointer; transition:0.3s; }
+.product-card button:hover { background:#ff3b3f; transform:scale(1.05); }
+
+/* Login */
+.login-container { width:300px; margin:100px auto; text-align:center; background:white; padding:30px; border-radius:15px; box-shadow:0 10px 20px rgba(0,0,0,0.1); }
+.login-container input { width:100%; padding:10px; margin:10px 0; border-radius:8px; border:1px solid #ccc; }
+.login-container button { padding:10px 15px; border:none; border-radius:10px; background:#ff5e62; color:white; cursor:pointer; transition:0.3s; }
+.login-container button:hover { background:#ff3b3f; transform:scale(1.05); }
+
+/* Cart */
+.cart-section { width:500px; margin:50px auto; background:white; padding:30px; border-radius:15px; box-shadow:0 10px 20px rgba(0,0,0,0.1); }
+.cart-section h2 { text-align:center; margin-bottom:20px; }
+.cart-section button { margin-top:20px; padding:12px 20px; border:none; border-radius:10px; background:#667eea; color:white; cursor:pointer; transition:0.3s; }
+.cart-section button:hover { background:#5a67d8; transform:scale(1.05); }
+
+/* Footer */
+footer { text-align:center; padding:30px 20px; background:#333; color:white; margin-top:50px; }
